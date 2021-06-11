@@ -1,0 +1,461 @@
+{
+  "metadata": {
+    "configurationVersions": [
+      4
+    ],
+    "clusterVersion": "1.219.83.20210609-130419"
+  },
+  "id": "bc420ecf-fcd5-4ea6-8261-e20d8574de60",
+  "dashboardMetadata": {
+    "name": "KQG;project=dt-orders;service=catalog;stage=dev",
+    "shared": false,
+    "owner": "rob.jahn@dynatrace.com",
+    "sharingDetails": {
+      "linkShared": false,
+      "published": false
+    },
+    "tags": null
+  },
+  "tiles": [
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "query": "",
+      "type": "",
+      "CustomName": "",
+      "Markdown": "KQG.Total.Pass=90%;KQG.Total.Warning=70%;KQG.Compare.WithScore=pass;KQG.Compare.Results=1;KQG.Compare.Function=avg",
+      "bounds": {
+        "top": 76,
+        "left": 0,
+        "width": 1596,
+        "height": 38
+      },
+      "tileFilter": {
+        "timeframe": ""
+      },
+      "queries": null,
+      "assignedEntities": null,
+      "filterConfig": {
+        "type": "",
+        "customName": "",
+        "defaultName": "",
+        "chartConfig": {
+          "legendShown": false,
+          "type": "",
+          "series": null,
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": null
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "query": "",
+      "type": "",
+      "CustomName": "",
+      "Markdown": "",
+      "bounds": {
+        "top": 190,
+        "left": 0,
+        "width": 380,
+        "height": 228
+      },
+      "tileFilter": {
+        "timeframe": ""
+      },
+      "queries": null,
+      "assignedEntities": null,
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "Response time (P95);sli=svc_rt_p95;pass=\u003c+10%,\u003c600",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "SINGLE_VALUE",
+          "series": [
+            {
+              "metric": "builtin:service.response.time",
+              "aggregation": "PERCENTILE",
+              "percentile": 95,
+              "type": "LINE",
+              "entityType": "SERVICE",
+              "dimensions": [],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {
+          "SERVICE": {
+            "AUTO_TAGS": [
+              "project:dt-orders",
+              "service:catalog",
+              "stage:dev"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "query": "",
+      "type": "",
+      "CustomName": "",
+      "Markdown": "",
+      "bounds": {
+        "top": 418,
+        "left": 0,
+        "width": 380,
+        "height": 228
+      },
+      "tileFilter": {
+        "timeframe": ""
+      },
+      "queries": null,
+      "assignedEntities": null,
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "Response time (P90);sli=svc_rt_p90;pass=\u003c+10%,\u003c550",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "SINGLE_VALUE",
+          "series": [
+            {
+              "metric": "builtin:service.response.time",
+              "aggregation": "PERCENTILE",
+              "percentile": 90,
+              "type": "LINE",
+              "entityType": "SERVICE",
+              "dimensions": [],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {
+          "SERVICE": {
+            "AUTO_TAGS": [
+              "project:dt-orders",
+              "service:catalog",
+              "stage:dev"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "query": "",
+      "type": "",
+      "CustomName": "",
+      "Markdown": "",
+      "bounds": {
+        "top": 646,
+        "left": 0,
+        "width": 380,
+        "height": 228
+      },
+      "tileFilter": {
+        "timeframe": ""
+      },
+      "queries": null,
+      "assignedEntities": null,
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "Response time (P50);sli=svc_rt_p50;pass=\u003c+10%,\u003c500",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "SINGLE_VALUE",
+          "series": [
+            {
+              "metric": "builtin:service.response.time",
+              "aggregation": "PERCENTILE",
+              "percentile": 50,
+              "type": "LINE",
+              "entityType": "SERVICE",
+              "dimensions": [],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {
+          "SERVICE": {
+            "AUTO_TAGS": [
+              "project:dt-orders",
+              "service:catalog",
+              "stage:dev"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "query": "",
+      "type": "",
+      "CustomName": "",
+      "Markdown": "## Service Performance (SLI/SLO)",
+      "bounds": {
+        "top": 152,
+        "left": 0,
+        "width": 380,
+        "height": 38
+      },
+      "tileFilter": {
+        "timeframe": ""
+      },
+      "queries": null,
+      "assignedEntities": null,
+      "filterConfig": {
+        "type": "",
+        "customName": "",
+        "defaultName": "",
+        "chartConfig": {
+          "legendShown": false,
+          "type": "",
+          "series": null,
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": null
+      }
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "query": "",
+      "type": "",
+      "CustomName": "",
+      "Markdown": "## Service Errors \u0026 Throughput (SLI/SLO)",
+      "bounds": {
+        "top": 152,
+        "left": 380,
+        "width": 380,
+        "height": 38
+      },
+      "tileFilter": {
+        "timeframe": ""
+      },
+      "queries": null,
+      "assignedEntities": null,
+      "filterConfig": {
+        "type": "",
+        "customName": "",
+        "defaultName": "",
+        "chartConfig": {
+          "legendShown": false,
+          "type": "",
+          "series": null,
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": null
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "query": "",
+      "type": "",
+      "CustomName": "",
+      "Markdown": "",
+      "bounds": {
+        "top": 190,
+        "left": 380,
+        "width": 380,
+        "height": 228
+      },
+      "tileFilter": {
+        "timeframe": ""
+      },
+      "queries": null,
+      "assignedEntities": null,
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "Failure Rate (Avg);sli=svc_fr;pass=\u003c+10%,\u003c2",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "SINGLE_VALUE",
+          "series": [
+            {
+              "metric": "builtin:service.errors.server.rate",
+              "aggregation": "AVG",
+              "percentile": null,
+              "type": "LINE",
+              "entityType": "SERVICE",
+              "dimensions": [],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {
+          "SERVICE": {
+            "AUTO_TAGS": [
+              "project:dt-orders",
+              "service:catalog",
+              "stage:dev"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "query": "",
+      "type": "",
+      "CustomName": "",
+      "Markdown": "",
+      "bounds": {
+        "top": 418,
+        "left": 380,
+        "width": 380,
+        "height": 228
+      },
+      "tileFilter": {
+        "timeframe": ""
+      },
+      "queries": null,
+      "assignedEntities": null,
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "Throughput (per min);sli=svc_tp_min;pass=\u003c+10%,\u003c200",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "SINGLE_VALUE",
+          "series": [
+            {
+              "metric": "builtin:service.requestCount.total",
+              "aggregation": "NONE",
+              "percentile": null,
+              "type": "LINE",
+              "entityType": "SERVICE",
+              "dimensions": [],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "MINUTE"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {
+          "SERVICE": {
+            "AUTO_TAGS": [
+              "project:dt-orders",
+              "service:catalog",
+              "stage:dev"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "query": "",
+      "type": "",
+      "CustomName": "",
+      "Markdown": "",
+      "bounds": {
+        "top": 646,
+        "left": 380,
+        "width": 380,
+        "height": 228
+      },
+      "tileFilter": {
+        "timeframe": ""
+      },
+      "queries": null,
+      "assignedEntities": null,
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "Calls to backend services (per min);sli=svc2svc_calls;",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "SINGLE_VALUE",
+          "series": [
+            {
+              "metric": "builtin:service.nonDbChildCallCount",
+              "aggregation": "NONE",
+              "percentile": null,
+              "type": "LINE",
+              "entityType": "SERVICE",
+              "dimensions": [],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "MINUTE"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {
+          "SERVICE": {
+            "AUTO_TAGS": [
+              "project:dt-orders",
+              "service:catalog",
+              "stage:dev"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "query": "",
+      "type": "",
+      "CustomName": "",
+      "Markdown": "# SLI/SLO-based Quality Gate Dashboard - view results in your [Keptn Bridge](https://rob00334.cloudautomation.live.dynatrace.com)",
+      "bounds": {
+        "top": 0,
+        "left": 0,
+        "width": 1596,
+        "height": 76
+      },
+      "tileFilter": {
+        "timeframe": ""
+      },
+      "queries": null,
+      "assignedEntities": null,
+      "filterConfig": {
+        "type": "",
+        "customName": "",
+        "defaultName": "",
+        "chartConfig": {
+          "legendShown": false,
+          "type": "",
+          "series": null,
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": null
+      }
+    }
+  ]
+}
