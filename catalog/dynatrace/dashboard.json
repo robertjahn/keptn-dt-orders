@@ -1,9 +1,9 @@
 {
   "metadata": {
     "configurationVersions": [
-      4
+      5
     ],
-    "clusterVersion": "1.219.96.20210611-115536"
+    "clusterVersion": "1.226.91.20210918-122217"
   },
   "id": "bc420ecf-fcd5-4ea6-8261-e20d8574de60",
   "dashboardMetadata": {
@@ -432,12 +432,44 @@
       "query": "",
       "type": "",
       "CustomName": "",
-      "Markdown": "# SLI/SLO-based Quality Gate Dashboard - view results in your [Keptn Bridge](https://rob00334.cloudautomation.live.dynatrace.com)",
+      "Markdown": "# SLI/SLO-based Quality Gate Dashboard ",
       "bounds": {
         "top": 0,
         "left": 0,
         "width": 1596,
         "height": 76
+      },
+      "tileFilter": {
+        "timeframe": ""
+      },
+      "queries": null,
+      "assignedEntities": null,
+      "filterConfig": {
+        "type": "",
+        "customName": "",
+        "defaultName": "",
+        "chartConfig": {
+          "legendShown": false,
+          "type": "",
+          "series": null,
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": null
+      }
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "query": "",
+      "type": "",
+      "CustomName": "",
+      "Markdown": "[View Results in Bridge](https://rob00334.cloudautomation.live.dynatrace.com)",
+      "bounds": {
+        "top": 114,
+        "left": 0,
+        "width": 304,
+        "height": 38
       },
       "tileFilter": {
         "timeframe": ""
